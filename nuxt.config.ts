@@ -28,5 +28,5 @@ export default defineNuxtConfig({
     typedPages: true,
   },
 
-  modules: ["@nuxt/eslint", "@nuxtjs/sitemap"],
+  modules: ["@nuxt/eslint", "@nuxtjs/sitemap", "@nuxtjs/robots"],
 });
