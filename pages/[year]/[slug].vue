@@ -11,6 +11,7 @@ const { data: election } = await useFetch(`/api/elections/${year}/${slug}`);
 
 <template>
   <div v-if="election">
+    <Title>{{ election.title }} {{ year }}</Title>
     <h1>{{ election.title }} {{ year }}</h1>
     <h2>Statements</h2>
     <ul>

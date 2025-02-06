@@ -18,6 +18,7 @@ export default defineNuxtConfig({
   },
   site: {
     name: "Data-O-Mat",
+    defaultLocale: "de",
   },
   sitemap: {
     sources: ["/api/__sitemap__/urls"],
@@ -28,5 +29,10 @@ export default defineNuxtConfig({
     typedPages: true,
   },
 
-  modules: ["@nuxt/eslint", "@nuxtjs/sitemap", "@nuxtjs/robots"],
+  modules: [
+    "@nuxt/eslint",
+    "@nuxtjs/sitemap",
+    "@nuxtjs/robots",
+    "nuxt-seo-utils",
+  ],
 });
